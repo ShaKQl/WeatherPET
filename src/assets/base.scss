@@ -50,10 +50,40 @@
   }
 }
 
+
+
+@font-face {
+  font-family: 'Poppins';
+  src: url(./fonts/Poppins-Regular.ttf);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'PoppinsLight';
+  src: url(./fonts/Poppins-Thin.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'PoppinsBold';
+  src: url(./fonts/Poppins-Bold.ttf);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Medium';
+  src: url(./fonts/Poppins-Medium.ttf);
+  font-weight: 600;
+}
+
+
+
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: 'Poppins';
 }
