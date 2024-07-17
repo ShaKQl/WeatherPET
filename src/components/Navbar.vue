@@ -73,40 +73,45 @@ const toggleDarkMode = () => {
 .dark-mode-toggle {
   display: flex;
   align-items: center;
+  flex-direction: column;
   cursor: pointer;
-
+  
   &__switch {
-    width: 50px;
-    height: 25px;
-    border-radius: 12.5px;
-    background-color: #ccc;
+    margin-top: 10px;
+    width: 100px;
+    height: 40px;
+    border-radius: 40px;
+    background-color: #333;
     position: relative;
     transition: background-color 0.3s ease;
 
     &--dark {
-      background-color: #333;
+      background-color: #ccc;
 
       .dark-mode-toggle__circle {
-        background-color: #fff;
-        transform: translateX(25px);
+        background-color: #000;
+        transform: translateX(58px);
       }
     }
+
   }
 
   &__circle {
-    width: 21px;
-    height: 21px;
+    width: 36px;
+    height: 36px;
     border-radius: 50%;
-    background-color: #000;
+    background-color: #fff;
     position: absolute;
-    top: 2px;
-    left: 2px;
+    top: 3px;
+    left: 3px;
     transition: transform 0.3s ease, background-color 0.3s ease;
   }
 
   &__label {
     margin-left: 10px;
-    font-size: 1.2em;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 900;
   }
 }
 
