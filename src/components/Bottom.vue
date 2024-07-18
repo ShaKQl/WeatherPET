@@ -79,14 +79,16 @@
 <style lang="scss" scoped>
 @import "../assets/main";
 .forecast {
-  margin-top: 50px;
+  margin-top: 40px;
   color: #fff;
   font-weight: 600;
 
   &__wrapper {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    // align-items: stretch;
+    max-height: 366px;
+    height: 100%;
   }
 
   &__dayByDay {
@@ -96,8 +98,9 @@
     width: 100%;
     border-radius: 30px;
     background: #444;
-    
-    padding: 20px 15px 2px 30px;
+    padding: 15px;
+    justify-content: space-evenly;
+    gap: 3px;
     font-size: 20px;
     @include underShadowMove;
 }
@@ -122,6 +125,7 @@
     background: #444;
     max-width: 870px;
     padding: 15px 80px;
+    max-height: 366px;
 
     &__img {
         width: 80px;
@@ -140,15 +144,18 @@
     
     &__wrapper {
         display: flex;
-        align-items: center;
-        margin-top: 20px;
+        // margin: 20px;
+        margin-bottom: 15px;
         gap: 15px;
+        justify-content: space-evenly;
     }
 
     &__card{
-        padding: 15px 30м имpx;
+        padding: 15px 25px;
         background: #373636;
         border-radius: 40px;
+        font-size: 20px;
+        gap: 5px;
         @include underShadow;
     }
     @include underShadowMove;

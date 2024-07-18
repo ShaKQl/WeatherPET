@@ -17,7 +17,8 @@ import Bottom from "./components/Bottom.vue";
 <style lang="scss" scoped>
 .header {
   padding: 65px 80px;
-  background: linear-gradient(135deg, #1a1a1a, #3a3a3a);
+  background: linear-gradient(135deg, #444444, #373636);
   font-family: "Poppins";
+  height: 100vh;
 }
 </style>
