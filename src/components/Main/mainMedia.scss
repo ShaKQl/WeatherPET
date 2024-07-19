@@ -1,0 +1,54 @@
+
+@media (max-width: 1640px) {
+    .main {
+        &__wrapper {
+            gap: 30px;
+        }
+
+        &__today {
+            max-width: 450px;
+            padding: 30px 80px;
+        }
+
+        &__city {
+            margin-bottom: 0;
+            font-size: 32px;
+        }
+
+        &__time {
+            font-size: 72px;
+        }
+    }
+
+    .info {
+        max-width: 700px;
+        padding: 10px 20px;
+
+        &__data {
+            gap: 15px;
+            max-height: 300px;
+        }
+
+        &__tempo {}
+
+        &__feelsLike {}
+    }
+    
+    .zenit {
+    
+        &__riseImg {}
+    }
+    
+    .nadir {}
+    
+    .otherInfo {
+    
+        &__card {}
+        .updown {}
+    }
+}
+
+
+
+
+

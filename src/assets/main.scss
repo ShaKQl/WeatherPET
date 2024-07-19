@@ -1,18 +1,19 @@
 @import './base.scss';
 
+
 @mixin underShadow{
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 2px 4px rgba(0, 0, 0, 0.226);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 2px 4px rgba(0, 0, 0, 0.226);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
   
-    &:hover {
-      transform: translateZ(-6px);
-      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5), 0 3px 6px rgba(0, 0, 0, 0.514);
-    }
+  &:hover {
+    transform: translateZ(-6px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5), 0 3px 6px rgba(0, 0, 0, 0.514);
+  }
 }
 @mixin underShadowMove{
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 2px 4px rgba(0, 0, 0, 0.226);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-
+  
   &:hover {
     transform: translateY(-6px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5), 0 3px 6px rgba(0, 0, 0, 0.514);
@@ -21,6 +22,12 @@
 
 @mixin linearGradient {
   background: linear-gradient(90deg, #ffffff 20%, #666 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
+
+@import '../components/Bottom/bottom.scss';
+@import '../components/Main/mainPart.scss';
+@import '../components/Navbar/navbar.scss';
+
+

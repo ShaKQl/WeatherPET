@@ -9,9 +9,9 @@
 </template>
 
 <script setup>
-import Navbar from "./components/Navbar.vue";
-import Main from "./components/Main.vue";
-import Bottom from "./components/Bottom.vue";
+import Navbar from "./components/Navbar/Navbar.vue";
+import Main from "./components/Main/Main.vue";
+import Bottom from "./components/Bottom/Bottom.vue";
 </script>
 
 <style lang="scss" scoped>
@@ -20,5 +20,11 @@ import Bottom from "./components/Bottom.vue";
   background: linear-gradient(135deg, #444444, #373636);
   font-family: "Poppins";
   height: 100vh;
+}
+
+@media (max-width: 1640px) {
+    .header{
+      padding: 60px 120px;
+    }
 }
 </style>

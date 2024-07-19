@@ -1,0 +1,84 @@
+// @import "../../assets/main.scss";
+
+.forecast {
+    margin-top: 40px;
+    color: var(--vt-c-white);
+    font-weight: 600;
+  
+    &__wrapper {
+      display: flex;
+      justify-content: space-between;
+      // align-items: stretch;
+      max-height: 366px;
+      height: 100%;
+    }
+  
+    &__dayByDay {
+      display: flex;
+      flex-direction: column;
+      max-width: 414px;
+      width: 100%;
+      border-radius: 30px;
+      background: var(--vt-c-black-soft);
+      padding: 15px;
+      justify-content: space-evenly;
+      gap: 3px;
+      font-size: 20px;
+      @include underShadowMove;
+  }
+  
+  &__date {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 15px;
+  }
+  
+  &__img {
+    width: 50px;
+    height: 50px;
+  }
+  }
+  
+  .hourly {
+      text-align: center;
+      width: 100%;
+      border-radius: 30px;
+      background: var(--vt-c-black-soft);
+      max-width: 870px;
+      padding: 15px 80px;
+      max-height: 366px;
+  
+      &__img {
+          width: 80px;
+          height: 80px;
+      }
+      
+      &__card {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+      }
+      
+      &__header{
+          font-size: 32px;
+      }
+      
+      &__wrapper {
+          display: flex;
+          // margin: 20px;
+          margin-bottom: 15px;
+          gap: 15px;
+          justify-content: space-evenly;
+      }
+  
+      &__card{
+          padding: 15px 25px;
+          background: #373636;
+          border-radius: 40px;
+          font-size: 20px;
+          gap: 5px;
+          @include underShadow;
+      }
+      @include underShadowMove;
+  }

@@ -1,66 +1,4 @@
-
-<script setup>
-import { ref, onMounted } from "vue";
-
-const isDarkMode = ref(false);
-
-onMounted(() => {
-  isDarkMode.value = document.body.classList.contains("dark-mode");
-});
-
-const toggleDarkMode = () => {
-  isDarkMode.value = !isDarkMode.value;
-  document.body.classList.toggle("dark-mode", isDarkMode.value);
-};
-</script>
-
-
-
-
-<template>
-  <div class="wrapper">
-    <div class="dark-mode-toggle" @click="toggleDarkMode">
-      <div
-        :class="[
-          'dark-mode-toggle__switch',
-          { 'dark-mode-toggle__switch--dark': isDarkMode },
-        ]"
-      >
-        <div class="dark-mode-toggle__circle"></div>
-      </div>
-      <span class="dark-mode-toggle__label">Dark Mode</span>
-    </div>
-
-    <div class="input">
-      <img src="../assets/images/search.svg" alt="" class="input__inImg" />
-      <input
-        type="text"
-        placeholder="Search for your preffered city..."
-        class="input__space"
-      />
-    </div>
-
-    <div class="currentPlace">
-      <button class="currentPlace__btn">
-        <img
-          src="../assets/images/current-location.svg"
-          alt=""
-          class="currentPlace__logo"
-        />
-        <p class="currentPlace__txt">Current Location</p>
-      </button>
-    </div>
-  </div>
-</template>
-
-
-
-
-<style lang="scss" scoped>
-
-@import '../assets/main'; 
-
-
+// @import "../../assets/main.scss";
 
 .wrapper {
   display: flex;
@@ -100,7 +38,7 @@ const toggleDarkMode = () => {
     width: 36px;
     height: 36px;
     border-radius: 50%;
-    background-color: #fff;
+    background-color: var(--vt-c-white);
     position: absolute;
     top: 3px;
     left: 3px;
@@ -110,7 +48,7 @@ const toggleDarkMode = () => {
   &__label {
     margin-left: 10px;
     font-size: 18px;
-    color: #fff;
+    color: var(--vt-c-white);
     font-weight: 900;
   }
 }
@@ -121,7 +59,7 @@ const toggleDarkMode = () => {
 
   display: flex;
   padding: 8px 33px;
-  background: #444444;
+  background: var(--vt-c-black-soft);
   gap: 30px;
   border-radius: 40px;
 
@@ -131,9 +69,8 @@ const toggleDarkMode = () => {
     background: none;
     outline: none;
     border: none;
-    min-width: 621px;
     width: 100%;
-    color: #fff;
+    color: var(--vt-c-white);
     font-size: 18px;
     cursor: pointer;
   }
@@ -155,7 +92,7 @@ const toggleDarkMode = () => {
         padding: 14px 27px;
         border-radius: 40px;
         background: #4CBB17;
-        color: #fff;
+        color: var(--vt-c-white);
         font-size: 22px;
         font-weight: 700;
         border: none;
@@ -165,4 +102,5 @@ const toggleDarkMode = () => {
     }
 
 }
-</style>
+
+@import './navbarMedia';
